@@ -1,8 +1,5 @@
 const input = document.querySelector('input');
 
-//El código ha de contener un adjetivo calificativo que describa una de estas dos asignaturas
-var expresion_regular_1 = /.*|[dD]ivertid[a|as]|[Mm]ejo[r|es]|[Ii]ncre[ií]bl[e|es]|[Aa]sombros[a|as]|[Ff]ant[aá]stic[a|as]|[Ii]nsuperabl[e|es]|[Mm]agnificient[e|es]|[Gg]randilocuent[e|es].*/;
-
 function agregar(){
     const li = document.createElement('li');
     const artista = document.createElement('p');
@@ -28,7 +25,7 @@ function agregar(){
 
 function separarArtistaYTitulo(cadena) {
     // Define la expresión regular para encontrar el separador entre artista y título
-    const expresionRegular = /[-|;/]/; 
+    const expresionRegular = /[-|;/:]/; 
   
     // Divide la cadena usando la expresión regular
     const resultado = cadena.split(expresionRegular);
